@@ -1,8 +1,6 @@
 import React from "react";
 import css from "./Hero.module.css";
-import Arrow from "../../assets/arrow.png";
-import Cart2 from "../../assets/cart-2.png";
-import HeroImg from "../../assets/hero.png";
+
 
 const Hero = () => {
   return (
@@ -11,8 +9,16 @@ const Hero = () => {
       <div className={css.h_sides}>
         <span>skin protection cream</span>
 
-        <div className={css.text2}></div>
+        <div className={css.text2}>
+          <span>Trendy Collection</span>
+          <span>
+            {""}
+            Seedly say has  suitable disposal  and boy 
+          </span>
+        </div>
       </div>
+      {/*middle side hero image*/}
+      
     </div>
   );
 };
