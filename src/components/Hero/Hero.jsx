@@ -4,20 +4,18 @@ import HeroImg from "../../assets/hero.png";
 import { BsArrowRight } from "react-icons/bs";
 
 
-
-
 const Hero = () => {
   return (
     <div className={css.container}>
       {/*left side*/}
       <div className={css.h_sides}>
-        <span>skin protection cream</span>
+        <span className={css.text1}>skin protection cream</span>
 
         <div className={css.text2}>
           <span>Trendy Collection</span>
           <span>
             {""}
-            Seedly say has  suitable disposal  and boy 
+            Seedly say has suitable play boy girl finish fish nik nike nikers
           </span>
         </div>
       </div>
@@ -27,7 +25,7 @@ const Hero = () => {
         <div className={css.blueCircle}></div>
         <img src={HeroImg} alt="" width={500} />
         <div className={css.cart2}>
-           
+          {/* <ShoppingCart /> */}
 
           <div className={css.signup}>
             <span>Best Signup Offers</span>
