@@ -1,15 +1,12 @@
+import { useContext } from "react";
 import { useMatch } from "react-router-dom";
+import { AppContext } from "../App";
 import NotFound from "./NotFound";
 
 export default function Category() {
   const { params } = useMatch("/categories/:slug");
-
-  const categories = [
-    { id: 1, name: "Hats", slug: "hats" },
-    { id: 2, name: "Backpack", slug: "backpack" },
-    { id: 3, name: "Tracksuits", slug: "tracksuits" },
-    { id: 4, name: "Sneakers", slug: "sneakers" },
-  ];
+   // получить список категории из App
+  const { categories } = useContext(AppContext);
 
   const category = categories.find(
     (category) => category.slug === params.slug
