@@ -1,0 +1,24 @@
+.Nav{
+  padding: 1.5rem;
+  display: flex;
+}
+.Nav .NavItem a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.Nav .NavItem a:hover {
+  color:rgb(244, 117, 58);
+  cursor: pointer;
+  list-style: none
+}
+
+.Nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.Nav .NavLink {
+  display: flex;
+}
