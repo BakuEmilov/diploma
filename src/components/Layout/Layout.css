@@ -1,25 +1,28 @@
 .Layout {
-  /* display: grid;
+  display: grid;
   grid-template-areas: "header header"
                        "aside main"
                        "footer footer";
-  grid-template-columns: 1fr 3fr; */
+  grid-template-columns: 2fr 7fr;
   
   max-width: 1340px;
   margin: 0 auto;
 } 
 .Layout header {
   display: flex;
+  /* justify-content: center; */
   grid-area: header;
 }
 .Layout aside {
   grid-area: aside;
+  border-radius: 10px;
 }
 .Layout main {
   grid-area: main;
 }
 .Layout footer {
   grid-area: footer;
+
 }
 
 .logo{

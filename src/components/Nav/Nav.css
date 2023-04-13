@@ -6,12 +6,17 @@
   color: #000;
   font-weight: 500;
   text-decoration: none;
+  padding: 10px 20px;
 }
 
 .Nav .NavItem a:hover {
-  color:rgb(244, 117, 58);
+  color: #fff;
+  background-color: rgb(125, 122, 122);
   cursor: pointer;
-  list-style: none
+  list-style: none;
+  border-bottom: 1px solid rgb(125, 122, 122);
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .Nav ul {
@@ -20,5 +25,5 @@
 }
 
 .Nav .NavLink {
-  display: flex;
+
 }
