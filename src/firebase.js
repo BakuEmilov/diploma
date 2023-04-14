@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection } from 'firebase/firestore/lite';
+import { getFirestore, collection } from "firebase/firestore/lite";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "diploma-80372",
   storageBucket: "diploma-80372.appspot.com",
   messagingSenderId: "385982947477",
-  appId: "1:385982947477:web:06d880a8d1fea59e5abb9c"
+  appId: "1:385982947477:web:06d880a8d1fea59e5abb9c",
 };
 
 // Инициализация приложения
@@ -20,5 +20,5 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Получение списка категорий (коллекции документов)
-export const categoryCollection = collection(db, 'categories');
-export const productCollection = collection(db, 'product');
+export const categoryCollection = collection(db, "categories");
+export const productCollection = collection(db, "products");

@@ -21,7 +21,7 @@ export default function Category() {
   return (
     <div className="Category">
       <h1>{category.name}</h1>
-      <ProductList />
+      <ProductList category={category} />
     </div>
   );
 }
