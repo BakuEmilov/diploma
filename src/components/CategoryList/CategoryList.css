@@ -5,14 +5,14 @@
 
 .CategoryList li {
   list-style: none;
+  padding: 2rem 1rem;
 }
 
 .CategoryList li a {
   text-decoration: none;
-  color: var(--color-link); 
+  color: black; 
 }
 
 .CategoryList li a:hover {
-   color: var(--color-link-hover);
-  background-color: rgb(223, 208, 208); 
+   color: rgb(177, 55, 3);
 }
