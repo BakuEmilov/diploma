@@ -4,15 +4,16 @@
 }
 
 .CategoryList li {
+  font-size: 17px;
   list-style: none;
   padding: 2rem 1rem;
 }
 
 .CategoryList li a {
   text-decoration: none;
-  color: black; 
+  color: white; 
 }
 
 .CategoryList li a:hover {
-   color: rgb(177, 55, 3);
+   color: red;
 }

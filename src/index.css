@@ -4,7 +4,7 @@
   body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: rgb(234, 238, 150);
+    background: rgb(47, 45, 45);
     transition: all 3ms ease;
-    color: black;
+    color: white;
   }

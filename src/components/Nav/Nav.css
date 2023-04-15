@@ -3,14 +3,14 @@
   display: flex;
 }
 .Nav .NavItem a {
-  color: #000;
+  color: white;
   font-weight: 500;
   text-decoration: none;
   padding: 10px 20px;
 }
 
 .Nav .NavItem a:hover {
-  color: rgb(177, 55, 3);
+  color: red;
   cursor: pointer;
   list-style: none;
   text-decoration: none;
