@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../App";
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
+import "./Product.css"
 
 export default function Product() {
   const { products } = useContext(AppContext);

@@ -11,7 +11,9 @@
 .ProductList .Product img {
   border-radius: 1rem;
   border: 3px solid black;
-  width: 100%;
+  width: 12rem;
+  height: 14rem;
+  
 }
 .ProductList .Product a {
   text-align: center;

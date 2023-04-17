@@ -25,7 +25,7 @@ export default function () {
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
-      <div className="Caritem" key={product.id}>
+      <div className="CartItem" key={product.id}>
         <img src={product.picture} alt={product.name} />
         <Link to={"/product/" + product.slug}>{product.name}</Link>
         {cart[product.id]}
