@@ -17,14 +17,14 @@ export const AppContext = createContext({
   products: [],
 
   //контекст для корзины
-  cart: [],
-  setCart: () => {},
+  cart: {}, //содержимое корзины
+  setCart: () => {}, //изменить содержимое корзины
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState({});
 
   useEffect(() => {
     // выполнить только однажды
