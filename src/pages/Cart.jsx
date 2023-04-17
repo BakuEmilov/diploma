@@ -1,5 +1,8 @@
 export default function Cart() {
-   <div className="Cart">
-    <h1>Cart</h1>
-   </div>
-}
+   return (
+     <div className="Cart">
+       <h1>Cart</h1>
+       <p>This is my home page</p>
+     </div>
+   );
+ }

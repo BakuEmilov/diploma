@@ -68,8 +68,7 @@ function App() {
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/products/:slug" element={<Product />} />
-            <Route path="/cart" elemant={<Cart />} />
-
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </Layout>
       </AppContext.Provider>

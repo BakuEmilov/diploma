@@ -5,7 +5,7 @@ import { AppContext } from "../../App";
 export default function CartLink() {
  const { cart } = useContext(AppContext);
 
- //
+ //вычислить кол-во товаров
  const total = Object.values(cart).reduce(
     (acc, num) => acc + num, 0
  );
