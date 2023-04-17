@@ -2,6 +2,7 @@ import { useContext } from "react";
 import "./ProductList.css";
 import { AppContext } from "../../App";
 import { NavLink } from "react-router-dom";
+import AddToCart from "../AddToCart/AddToCart";
 
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
@@ -13,6 +14,7 @@ export default function ProductList({ category }) {
         <img src={products.picture} alt={products.name} />
         <NavLink to={"/products/" + products.slug}>{products.name}</NavLink>
         <span>{products.price} $</span>
+        <AddToCart product={products} />
       </div>
     ));
 
