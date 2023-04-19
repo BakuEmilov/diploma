@@ -3,9 +3,11 @@ import "./OrderForm.css";
 import { ordersCollection } from "../../firebase";
 import { useContext } from "react";
 import { AppContext } from "../../App";
+import { useNavigate } from "react-router-dom";
 
 export default function OrderForm() {
-  const { cart } = useContext(AppContext);
+  const { cart, setCart } = useContext(AppContext);
+  const navigate = useNavigate();
 
   function onFormSubmit(event) {
     event.preventDefault();
@@ -18,6 +20,10 @@ export default function OrderForm() {
       email: formData.get('email'),
       address: formData.get('address'),
       cart: cart,
+    })
+    .then(doc => {
+      setCart({})
+      navigate('/thank-you')
     })
   }
 
