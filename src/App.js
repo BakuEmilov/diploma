@@ -8,7 +8,7 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, productCollection } from "./firebase";
+import { categoryCollection, onAuthChange, productCollection } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -21,19 +21,23 @@ export const AppContext = createContext({
   //контекст для корзины
   cart: {}, //содержимое корзины
   setCart: () => {}, //изменить содержимое корзины
+
+  user: null,
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+
   const [cart, setCart] = useState(() => {
-    return JSON.parse(localStorage.getItem('cart')) || {};
+    return JSON.parse(localStorage.getItem("cart")) || {};
   });
+
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
-
 
   useEffect(() => {
     // выполнить только однажды
@@ -47,21 +51,22 @@ function App() {
             ...doc.data(), // из свойств name, slug
             id: doc.id, // и свойства id
           }))
-        );
+        )
       });
 
-    getDocs(productCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setProducts(
-          // обновить состояние
-          docs.map((doc) => ({
-            // новый массив
+      getDocs(productCollection) // получить категории
+      .then(({ docs }) => { // когда категории загрузились
+        setProducts( // обновить состояние
+          docs.map(doc => ({ // новый массив
             ...doc.data(), // из свойств name, slug
-            id: doc.id, // и свойства id
+            id: doc.id // и свойства id
           }))
-        );
+        )
       });
+
+    onAuthChange(user => {
+      setUser(user);
+    });
   }, []);
 
   return (

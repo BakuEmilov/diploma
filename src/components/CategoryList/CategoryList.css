@@ -11,9 +11,9 @@
 
 .CategoryList li a {
   text-decoration: none;
-  color: white; 
+  color: white;
 }
 
 .CategoryList li a:hover {
-   color: red;
+  color: red;
 }

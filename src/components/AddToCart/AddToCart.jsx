@@ -5,11 +5,11 @@ export default function AddToCart({ product }) {
   const { cart, setCart } = useContext(AppContext);
 
   function onAddToCartClick() {
-      const qty = cart[product.id] ? cart[product.id] + 1 : 1;
-      setCart({
-        ...cart, // положить текущее содержимое корзинки
-       [product.id]: qty, // добавить текущий товар
-      });
+    const qty = cart[product.id] ? cart[product.id] + 1 : 1;
+    setCart({
+      ...cart, // положить текущее содержимое корзинки
+      [product.id]: qty, // добавить текущий товар
+    });
   }
 
   return (

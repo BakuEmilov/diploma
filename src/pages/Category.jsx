@@ -6,15 +6,13 @@ import NotFound from "./NotFound";
 
 export default function Category() {
   const { params } = useMatch("/categories/:slug");
-   // получить список категории из App
+  // получить список категории из App
   const { categories } = useContext(AppContext);
 
-  const category = categories.find(
-    (category) => category.slug === params.slug
-  );
+  const category = categories.find((category) => category.slug === params.slug);
 
   if (!category) {
-    return <NotFound />
+    return <NotFound />;
   }
 
   return (

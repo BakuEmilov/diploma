@@ -9,22 +9,25 @@ export default function OrderForm() {
   const { cart, setCart } = useContext(AppContext);
   const navigate = useNavigate();
 
+  if (Object.keys(cart).length === 0) {
+    return "Your cart is empty.";
+  }
+
   function onFormSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
 
     addDoc(ordersCollection, {
-      name: formData.get('name'),
-      phone: formData.get('phone'),
-      email: formData.get('email'),
-      address: formData.get('address'),
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+      address: formData.get("address"),
       cart: cart,
-    })
-    .then(doc => {
-      setCart({})
-      navigate('/thank-you')
-    })
+    }).then((doc) => {
+      setCart({});
+      navigate("/thank-you");
+    });
   }
 
   return (
