@@ -1,0 +1,7 @@
+.Auth button{
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px white solid ;
+}

@@ -10,6 +10,7 @@
 } 
 .Layout header {
   display: flex;
+  align-items: center;
   grid-area: header;
 }
 .Layout aside {
