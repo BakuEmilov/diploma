@@ -12,6 +12,7 @@ import { categoryCollection, onAuthChange, productCollection } from "./firebase"
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
+import Orders from "./pages/Orders";
 
 // Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
@@ -83,6 +84,7 @@ function App() {
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/orders "  element={<Orders />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
