@@ -1,7 +1,8 @@
 .Layout {
   display: grid;
   grid-template-areas: "header header"
-                       "aside main"
+                       "aside aside"
+                       "main main"
                        "footer footer";
   grid-template-columns: 2fr 7fr;
   
@@ -14,6 +15,8 @@
   grid-area: header;
 }
 .Layout aside {
+  display: flex;
+  justify-content: center;
   grid-area: aside;
   border-radius: 10px;
 }

@@ -8,7 +8,7 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, onAuthChange, productCollection } from "./firebase";
+import { categoryCollection, onAuthChange, ordersCollection, productCollection } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -18,6 +18,7 @@ import Orders from "./pages/Orders";
 export const AppContext = createContext({
   categories: [],
   products: [],
+  orders: [],
 
   //контекст для корзины
   cart: {}, //содержимое корзины
@@ -29,6 +30,7 @@ export const AppContext = createContext({
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
@@ -65,6 +67,16 @@ function App() {
         )
       });
 
+      getDocs(ordersCollection) // получить категории
+      .then(({ docs }) => { // когда категории загрузились
+        setOrders( // обновить состояние
+          docs.map(doc => ({ // новый массив
+            ...doc.data(), // из свойств name, slug
+            id: doc.id // и свойства id
+          }))
+        )
+      });
+
     onAuthChange(user => {
       setUser(user);
     });
@@ -72,7 +84,7 @@ function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
