@@ -1,14 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import { createContext, useEffect, useState } from "react";
+import { getDocs } from "firebase/firestore/lite";
+import {
+  categoryCollection,
+  onAuthChange,
+  ordersCollection,
+  productsCollection,
+} from "./firebase";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Deliver from "./pages/Deliver";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, onAuthChange, ordersCollection, productCollection } from "./firebase";
+
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -20,9 +26,9 @@ export const AppContext = createContext({
   products: [],
   orders: [],
 
-  //контекст для корзины
-  cart: {}, //содержимое корзины
-  setCart: () => {}, //изменить содержимое корзины
+  // контекст для корзины
+  cart: {}, // содержимое корзинки
+  setCart: () => {}, // изменить содержимое корзики
 
   user: null,
 });
@@ -54,37 +60,45 @@ function App() {
             ...doc.data(), // из свойств name, slug
             id: doc.id, // и свойства id
           }))
-        )
+        );
       });
 
-      getDocs(productCollection) // получить категории
-      .then(({ docs }) => { // когда категории загрузились
-        setProducts( // обновить состояние
-          docs.map(doc => ({ // новый массив
+    getDocs(productsCollection) // получить категории
+      .then(({ docs }) => {
+        // когда категории загрузились
+        setProducts(
+          // обновить состояние
+          docs.map((doc) => ({
+            // новый массив
             ...doc.data(), // из свойств name, slug
-            id: doc.id // и свойства id
+            id: doc.id, // и свойства id
           }))
-        )
+        );
       });
 
-      getDocs(ordersCollection) // получить категории
-      .then(({ docs }) => { // когда категории загрузились
-        setOrders( // обновить состояние
-          docs.map(doc => ({ // новый массив
+    getDocs(ordersCollection) // получить категории
+      .then(({ docs }) => {
+        // когда категории загрузились
+        setOrders(
+          // обновить состояние
+          docs.map((doc) => ({
+            // новый массив
             ...doc.data(), // из свойств name, slug
-            id: doc.id // и свойства id
+            id: doc.id, // и свойства id
           }))
-        )
+        );
       });
 
-    onAuthChange(user => {
+    onAuthChange((user) => {
       setUser(user);
     });
   }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user, orders }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -96,7 +110,7 @@ function App() {
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/orders "  element={<Orders />} />
+            <Route path="/orders" element={<Orders />} />
           </Routes>
         </Layout>
       </AppContext.Provider>

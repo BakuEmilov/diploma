@@ -10,7 +10,6 @@
 }
 
 .Nav .NavItem a:hover {
-  color: red;
   cursor: pointer;
   list-style: none;
   text-decoration: none;

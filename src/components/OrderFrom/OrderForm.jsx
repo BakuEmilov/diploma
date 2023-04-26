@@ -14,8 +14,9 @@ export default function OrderForm() {
   }
 
   if (!user) {
-    return "Please login to create an order"
+    return "Please login to create an order.";
   }
+
   function onFormSubmit(event) {
     event.preventDefault();
 

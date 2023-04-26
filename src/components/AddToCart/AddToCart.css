@@ -1,0 +1,14 @@
+.AddToCart button {
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem 5rem; 
+  background-color: rgb(47, 45, 45);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.AddToCart button:hover {
+  color: rgb(47, 45, 45);
+  background-color: white;
+}

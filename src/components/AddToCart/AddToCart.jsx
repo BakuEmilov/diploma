@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
+import "./AddToCart.css"
 
 export default function AddToCart({ product }) {
   const { cart, setCart } = useContext(AppContext);
@@ -14,8 +15,8 @@ export default function AddToCart({ product }) {
 
   return (
     <div className="AddToCart">
-      {cart[product.id] ? cart[product.id] : 0}
-      <button onClick={onAddToCartClick}>Add To Cart</button>
+      {cart[product.id]}
+      <button onClick={onAddToCartClick}>add</button>
     </div>
   );
 }
