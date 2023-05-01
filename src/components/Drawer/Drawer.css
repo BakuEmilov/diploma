@@ -1,0 +1,44 @@
+.Drawer .content {
+  padding: 1rem 0;
+  background-color: rgb(47, 45, 45);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  width: 260px;
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+
+  transform: translateX(-300px);
+  transition: transform .3s;
+}
+.Drawer .backdrop {
+  background-color: rgba(0, 0, 0, .3);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  display: none;
+}
+
+.open .backdrop {
+  display: block;
+}
+.open .content {
+  transform: translateX(0);
+}
+
+@media (min-width: 550px) {
+  .Drawer .backdrop {
+    display: none;
+  }
+  .Drawer .content {
+    transform: translateX(-300px);
+  }
+} 

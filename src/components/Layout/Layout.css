@@ -31,3 +31,9 @@
 .logo{
   display: flex;
 }
+
+@media (max-width: 550px) {
+  .Layout header > .Nav {
+    display: none;
+  }
+}
