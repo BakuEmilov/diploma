@@ -16,9 +16,11 @@
   padding: 1rem 6rem; 
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 
 .CategoryList li a:hover {
   color: rgb(47, 45, 45);
   background-color: white;
 }
+

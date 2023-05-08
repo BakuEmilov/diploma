@@ -1,7 +1,14 @@
 .Auth button{
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 10px;
   border: 1px white solid ;
+  background-color: rgb(47, 45, 45);
+  color: white;
+  transition: 0.3s;
+}
+.Auth button:hover{
+  background-color: white;
+  color: rgb(47, 45, 45);
 }

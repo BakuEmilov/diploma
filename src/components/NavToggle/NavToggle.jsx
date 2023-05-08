@@ -3,10 +3,9 @@ import "./NavToggle.css";
 function NavToggle({ callback }) {
   return (
     <button onClick={callback} className="NavToggle">
-      <div className="line">Home</div>
-      <div className="line">About</div>
-      <div className="line">Contact</div>
-      <div className="line">Deliver</div>
+      <div className="line"></div>
+      <div className="line"></div>
+      <div className="line"></div>                
     </button>
   );
 }

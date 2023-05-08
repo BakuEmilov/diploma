@@ -21,7 +21,7 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-        <div>
+        <div className="user">
           <CartLink />
           <Auth />
         </div>

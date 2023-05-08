@@ -1,4 +1,8 @@
 .CartLink a {
   color: white;
-} 
+}
+
+.CartLink{
+  padding-right: 30px;
+}
 
