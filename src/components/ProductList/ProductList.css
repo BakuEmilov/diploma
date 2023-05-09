@@ -19,6 +19,10 @@
   max-width: 300px;   
   max-height: 300px;
 }
+.Product img:hover {
+  box-shadow: 0 0 10px 5px #888;
+}
+
 .ProductList .Product a {
   text-align: center;
   color: white;
