@@ -1,20 +1,23 @@
 .ProductList {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .ProductList .Product {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
+  align-items: center;
+  text-align: center;
 }
 
 .ProductList .Product img {
   border-radius: 1rem;
-  border: 3px solid black;
-  width: 12rem;
-  height: 14rem;
-  
+  border: 2px solid white;
+  width: 100%;
+  height: auto;
+  max-width: 300px;   
+  max-height: 300px;
 }
 .ProductList .Product a {
   text-align: center;
