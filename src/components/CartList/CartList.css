@@ -11,3 +11,13 @@
   height: 100px;
   object-fit: cover;
 }
+
+.CartList .CartItem button {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+

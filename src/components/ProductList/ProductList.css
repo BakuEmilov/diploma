@@ -8,6 +8,7 @@
   flex-direction: column;
   max-width: 200px;
 }
+
 .ProductList .Product img {
   border-radius: 1rem;
   border: 3px solid black;

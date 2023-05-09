@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
 import "./CartList.css";
 
+
 export default function () {
   //получить список товаров и корзинку
   const { products, cart, setCart } = useContext(AppContext);
@@ -36,7 +37,9 @@ export default function () {
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
         <span>{cart[product.id] * product.price} $</span>
-        <button onClick={() => onItemRemove(product)}>Remove</button>
+        <button onClick={() => onItemRemove(product)}>
+          D
+        </button>
       </div>
     ));
 

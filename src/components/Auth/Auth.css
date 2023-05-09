@@ -12,3 +12,11 @@
   background-color: white;
   color: rgb(47, 45, 45);
 }
+.Auth .photoURL{
+  border-radius: 100%;
+  width: 30px;
+}
+.Auth span{
+  display: flex;
+  align-items: center;
+}
