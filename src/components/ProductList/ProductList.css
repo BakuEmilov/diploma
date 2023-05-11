@@ -16,7 +16,7 @@
   border: 2px solid white;
   width: 100%;
   height: auto;
-  max-width: 300px;   
+  max-width: 300px;
   max-height: 300px;
 }
 .Product img:hover {
@@ -33,4 +33,3 @@
   text-align: center;
   color: rgb(8, 236, 8);
 }
-
