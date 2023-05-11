@@ -1,6 +1,5 @@
-import { useContext } from "react";
+
 import { NavLink } from "react-router-dom";
-import { AppContext } from "../../App";
 import "./CartLink.css"
 
 

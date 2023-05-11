@@ -5,6 +5,7 @@ import "./Auth.css";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
+
   return (
     <div className="Auth">
       {user ? (
@@ -12,15 +13,11 @@ export default function Auth() {
           {user.photoURL ? (
             <img className="photoURL" src={user.photoURL} alt={user.displayName} />
           ) : null}
-          <button className="Sign" onClick={logOut}>
-            Sign out
-          </button>
+          <button className="Sign" onClick={logOut}>Sign out</button>
         </span>
       ) : (
         <span>
-          <button className="Sign" onClick={logIn}>
-            Sign in
-          </button>
+          <button className="Sign" onClick={logIn}>Sign in</button>
         </span>
       )}
     </div>
