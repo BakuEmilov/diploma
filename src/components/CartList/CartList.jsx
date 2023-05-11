@@ -4,7 +4,7 @@ import { AppContext } from "../../App";
 import "./CartList.css";
 
 
-export default function () {
+export default function CartList () {
   //получить список товаров и корзинку
   const { products, cart, setCart } = useContext(AppContext);
 

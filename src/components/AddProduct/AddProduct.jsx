@@ -37,14 +37,14 @@ export default function AddProduct({ category }) {
         addDoc(productsCollection, {
           category: category.id,
           name: name,
-          price: price,
+          price: Number(price),
           picture: pictureUrl,
           slug: name.replaceAll(" ", "-").toLowerCase(),
         })
       )
       .then(() => {
         setName("");
-        setPrice("");
+        setPrice(0);
         setPicture(null);
       })
       .catch((error) => {
