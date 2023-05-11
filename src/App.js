@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore";
 import {
   onAuthChange,
   onCategoriesLoad,
