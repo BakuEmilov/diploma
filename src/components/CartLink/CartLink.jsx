@@ -6,8 +6,6 @@ import "./CartLink.css"
 
 
 export default function CartLink() {  
- const { cart } = useContext(AppContext);
-
 
  return (
   <div className="CartLink">
