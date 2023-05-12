@@ -37,5 +37,9 @@ footer ul li a {
   text-decoration: none;
 }
 footer ul li a:hover {
-  color: black;
+  color: rgb(108, 3, 3);
+}
+footer p {
+  margin: 0;
+  line-height: 1.5;
 }
