@@ -27,7 +27,25 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-3"></div>
+          <div className="col-md-3">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <Link to="/services/web-design">Web Design</Link>
+              </li>
+              <li>
+                <Link to="/services/web-development">Web Development</Link>
+              </li>
+              <li>
+                <Link to="/services/mobile-app-development">
+                  Mobile App Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/seo">SEO</Link>
+              </li>
+            </ul>
+          </div>
           <div className="col-md-3"></div>
           <div className="col-md-3"></div>
         </div>
