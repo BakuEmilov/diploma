@@ -83,4 +83,32 @@ footer p {
     width: 100%;
     margin: 20px 0;
   }
+  footer h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  footer ul li {
+    margin-bottom: 5px;
+  }
+
+  footer ul li a {
+    font-size: 12px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer .social-media {
+    margin-top: 10px;
+  }
+
+  footer .social-media li {
+    margin-right: 5px;
+  }
+
+  footer .social-media i {
+    font-size: 14px;
+  }
 }
