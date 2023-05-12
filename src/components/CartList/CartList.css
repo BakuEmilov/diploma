@@ -18,6 +18,13 @@
   color: white;
 }
 
+.CartList .CartItem input{
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
 .CartList .CartItem button {
   background-color: rgb(47, 45, 45);
   color: white;
