@@ -36,5 +36,6 @@
 
 .CartList .CartItem button:hover{
   color: rgb(170, 7, 7);
+  transition: 0.3s;
 }
 

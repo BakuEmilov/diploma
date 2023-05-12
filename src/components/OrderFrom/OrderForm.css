@@ -1,0 +1,16 @@
+.OrderForm input {
+  margin: 10px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.OrderForm button {
+  width: 50px;
+  height: 40px;
+  background-color: rgb(47, 45, 45);
+  border: 2px solid white;
+}
+.OrderForm svg:hover{
+  cursor: pointer;
+  color: green;
+}
