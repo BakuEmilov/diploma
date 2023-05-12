@@ -46,7 +46,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-3"></div>
+          <div className="col-md-3">
+          <h3>Contact Us</h3>
+            <p>123 Main St<br /> Anytown, USA 12345</p>
+            <p>Phone: +996 707 763 896<br /> Email: emilovbaku530@gmail.com</p>
+          </div>
           <div className="col-md-3"></div>
         </div>
       </div>
