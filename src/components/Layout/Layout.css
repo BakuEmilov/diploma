@@ -22,6 +22,7 @@
 }
 .Layout main {
   grid-area: main;
+  margin-bottom: 50px;
 }
 .Layout footer {
   grid-area: footer;
