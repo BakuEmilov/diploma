@@ -13,6 +13,10 @@
   height: 100px;
   object-fit: cover;
 }
+.CartList .CartItem a {
+  text-decoration: none;
+  color: white;
+}
 
 .CartList .CartItem button {
   background-color: rgb(47, 45, 45);
