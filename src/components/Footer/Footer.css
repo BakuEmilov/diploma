@@ -18,3 +18,8 @@ footer div.col-md-3 {
   width: 20%;
   margin: 20px;
 }
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
