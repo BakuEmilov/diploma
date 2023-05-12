@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import "@с/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
   return (
@@ -51,7 +52,9 @@ const Footer = () => {
             <p>123 Main St<br /> Anytown, USA 12345</p>
             <p>Phone: +996 707 763 896<br /> Email: emilovbaku530@gmail.com</p>
           </div>
-          <div className="col-md-3"></div>
+          <div className="col-md-3">
+            
+          </div>
         </div>
       </div>
     </footer>
