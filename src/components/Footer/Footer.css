@@ -14,3 +14,7 @@ footer div.row {
   flex-wrap: wrap;
   justify-content: center;
 }
+footer div.col-md-3 {
+  width: 20%;
+  margin: 20px;
+}
