@@ -11,6 +11,7 @@
 }
 
 .Nav .NavItem a:hover {
+  color:rgb(245, 12, 12);
   cursor: pointer;
   list-style: none;
   text-decoration: none;

@@ -43,6 +43,26 @@ footer p {
   margin: 0;
   line-height: 1.5;
 }
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+footer .social-media li {
+  margin-right: 10px;
+}
+
+footer .social-media li:last-child {
+  margin-right: 0;
+}
+
+footer .social-media i {
+  color: rgb(47, 45, 45);
+  font-size: 20px;
+}
+footer .social-media i:hover{
+  color:rgb(245, 12, 12);
+}
 
 @media only screen and (max-width: 768px) {
   footer div.col-md-3 {
