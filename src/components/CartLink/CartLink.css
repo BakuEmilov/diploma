@@ -6,7 +6,7 @@
   padding-right: 30px;
 }
 .CartLink svg:hover {
-  color: rgb(123, 5, 5);
+  color: red;
   transition: 0.3s;
 } 
 

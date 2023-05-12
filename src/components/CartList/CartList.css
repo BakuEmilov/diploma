@@ -13,11 +13,15 @@
 }
 
 .CartList .CartItem button {
-  background-color: red;
+  background-color: rgb(47, 45, 45);
   color: white;
-  border: 1px solid red;
+  border: 2px solid ;
   border-radius: 10px;
   width: 40px;
   height: 40px;
+}
+
+.CartList .CartItem button:hover{
+  color: rgb(170, 7, 7);
 }
 
