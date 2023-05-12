@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import "@с/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
   return (
