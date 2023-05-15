@@ -2,11 +2,16 @@
   color: white;
 }
 
+.CartLink {
+  display: flex;
+  align-items: center;
+}
+
 .CartLink{
   padding-right: 30px;
 }
 .CartLink svg:hover {
-  color: red;
+  color: green;
   transition: 0.3s;
 } 
 
