@@ -9,6 +9,8 @@
     color: white;
   }
 
-  .Home{
-    
+  .Product img {
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px;
   }

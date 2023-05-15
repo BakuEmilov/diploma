@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Auth from "../Auth/Auth";
 import CartLink from "../CartLink/CartLink";
+import CategoryList from "../CategoryList/CategoryList";
 import Drawer from "../Drawer/Drawer";
 import Footer from "../Footer/Footer";
 import Logo from "../Logo/Logo";
@@ -26,6 +27,9 @@ export default function Layout(props) {
           <Auth />
         </div>
       </header>
+      <aside>
+        <CategoryList />
+      </aside>
       <main>{props.children}</main>
       <Footer />
     </div>
