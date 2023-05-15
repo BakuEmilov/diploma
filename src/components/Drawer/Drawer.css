@@ -1,5 +1,5 @@
 .Drawer .content {
-  padding: 1rem 0;
+  padding: 2rem 0;
   background-color: rgb(47, 45, 45);
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
@@ -42,3 +42,13 @@
     transform: translateX(-300px);
   }
 } 
+.Nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+.Logo {
+  display: flex;
+  justify-content: center;
+}
