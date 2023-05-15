@@ -8,6 +8,7 @@ export default function AddProduct({ category }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
     return null;
@@ -28,27 +29,31 @@ export default function AddProduct({ category }) {
     event.preventDefault();
 
     if (!picture) {
-      alert("Please upload an picture");
+      alert("Please upload an image");
       return;
     }
 
+    setIsSubmitting(true);
     uploadProductPhoto(picture)
       .then((pictureUrl) =>
         addDoc(productsCollection, {
           category: category.id,
           name: name,
-          price: Number(price),
+          price: price,
           picture: pictureUrl,
           slug: name.replaceAll(" ", "-").toLowerCase(),
         })
       )
       .then(() => {
         setName("");
-        setPrice(0);
+        setPrice("");
         setPicture(null);
       })
       .catch((error) => {
         console.log("Failed to add product:", error);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   }
 
@@ -86,7 +91,9 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Submitting..." : "Submit"}
+        </button>
       </form>
     </div>
   );
