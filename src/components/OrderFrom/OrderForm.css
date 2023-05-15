@@ -5,12 +5,17 @@
   border-radius: 10px;
 }
 .OrderForm button {
-  width: 50px;
-  height: 40px;
-  background-color: rgb(47, 45, 45);
-  border: 2px solid white;
+  color: white;
+  background: rgb(47, 45, 45);
+  border: none;
 }
 .OrderForm svg:hover{
   cursor: pointer;
   color: green;
+}
+.OrderForm {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
