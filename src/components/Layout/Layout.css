@@ -16,9 +16,10 @@
 }
 .Layout aside {
   display: flex;
-  justify-content: center;
   grid-area: aside;
   border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .Layout main {
   grid-area: main;

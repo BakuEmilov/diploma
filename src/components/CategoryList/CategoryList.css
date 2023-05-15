@@ -24,3 +24,18 @@
   background-color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .CategoryList ul {
+    flex-direction: column;
+  }
+  
+  .CategoryList li {
+    flex-basis: 100%;
+    font-size: 16px;
+    padding: 1rem 0;
+  }
+  
+  .CategoryList li a {
+    padding: 1rem; 
+  }
+}
