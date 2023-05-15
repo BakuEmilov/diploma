@@ -8,7 +8,6 @@ export default function Logo() {
       <NavLink to="/">
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
-      <span>nike</span>
     </div>
   );
 }

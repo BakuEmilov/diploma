@@ -10,14 +10,6 @@
   padding: 10px 20px;
 }
 
-.Nav .NavItem a:hover {
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-}
-
-
-
 .Nav ul {
   padding: 0;
   margin: 0;
@@ -36,3 +28,24 @@
     margin: 1rem 0;
   }
 }
+
+.Nav .NavItem a {
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none; 
+}
+.NavItem a:after {
+  background-color: white;
+  display: block;
+  content: "";
+  height: 2px; 
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.NavItem a:hover:after,
+  .NavItem a:focus:after {
+    width: 100%;
+  }
