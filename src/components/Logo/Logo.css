@@ -1,4 +1,5 @@
 .Logo{
+  padding: 0 40px;
   display: flex;
   align-items: center;
 }
@@ -6,3 +7,4 @@
   width: 5.5rem;
   height: 6rem;
 }
+
