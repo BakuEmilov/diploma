@@ -1,4 +1,7 @@
 .CartList .CartItem {
+  margin: 30px;
+  box-shadow: 0 0 7px 1px white;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
