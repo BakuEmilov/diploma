@@ -21,6 +21,7 @@
 }
 .Product img:hover {
   box-shadow: 0 0 10px 5px #888;
+  transition: 0.2s;
 }
 
 .ProductList .Product a {
