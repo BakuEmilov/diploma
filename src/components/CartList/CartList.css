@@ -8,6 +8,8 @@
   padding: 1rem;
   border-bottom: 1px solid #ccc;
 }
+.CartList .CartItem:hover{
+}
 
 .CartList .CartItem img {
   border: 2px solid white;
