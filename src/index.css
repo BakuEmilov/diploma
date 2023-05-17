@@ -26,23 +26,32 @@
     background-size: cover; 
     box-shadow: 0 0 10px 5px black;
   }
-  .Nike{
-    text-align: center;
-    color: white;
-    background: url(./assets/photo-gragon.jpg);
-    font-size: 320px;
-    font-weight: 700;
-    font-family: 'Nerko One', cursive;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-background-clip: text;
-    animation: animate 10s infinite ease-in-out;
+  .About{
+    background-color: white;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: 0 0 10px 5px black;
   }
-  @keyframes animate{
-    from{
-      background-position: 0 0;
-    }
-    to{
-      background-position: 100% 100%;
-    }
+  .Home{
+    background-color: white;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: 0 0 10px 5px black;
   }
+  .Contact{
+    background-color: white;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: 0 0 10px 5px black;
+  }
+  .Deliver{
+    background-color: white;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: 0 0 10px 5px black;
+  }
+ 
