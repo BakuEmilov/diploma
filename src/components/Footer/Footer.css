@@ -61,7 +61,7 @@ footer .social-media i {
   font-size: 30px;
 }
 footer .social-media i:hover{
-  color: green;
+  color: dimgray;
 }
 
 @media only screen and (max-width: 768px) {

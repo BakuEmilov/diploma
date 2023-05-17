@@ -11,7 +11,7 @@
 }
 .OrderForm svg:hover{
   cursor: pointer;
-  color: green;
+  color: dimgray;
 }
 .OrderForm {
   margin-top: 40px;
