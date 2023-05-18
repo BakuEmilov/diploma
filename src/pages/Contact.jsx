@@ -15,6 +15,11 @@ export default function Contact() {
             Facebook
           </a>
         </li>
+        <li>
+          <a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
+        </li>
         </ul>
       </div>
        <div className="map">
