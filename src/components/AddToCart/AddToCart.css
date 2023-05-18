@@ -12,4 +12,5 @@
 .AddToCart button:hover {
   color: rgb(47, 45, 45);
   background-color: white;
+  transition: 0.3s;
 }
