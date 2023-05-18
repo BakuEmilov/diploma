@@ -55,6 +55,20 @@
   color: dimgray;
   transition: 0.3s;
 }
+@media (max-width: 768px) {
+  .CartItem {
+    padding: 60px;
+  }
+
+  .CartItem img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .CartItem input {
+    width: 60px;
+  }
+}
 
 
 
