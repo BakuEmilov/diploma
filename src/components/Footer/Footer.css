@@ -37,7 +37,8 @@ footer ul li a {
   text-decoration: none;
 }
 footer ul li a:hover {
-  color: rgb(108, 3, 3);
+  color: dimgray;
+  transition: 0.3s;
 }
 footer p {
   margin: 0;
@@ -62,6 +63,7 @@ footer .social-media i {
 }
 footer .social-media i:hover{
   color: dimgray;
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 768px) {
