@@ -11,6 +11,7 @@
 .Auth button:hover {
   background-color: white;
   color: rgb(47, 45, 45);
+  transition: 0.3s;
 }
 .Auth .photoURL {
   margin: 10px;
