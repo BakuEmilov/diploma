@@ -1,43 +1,60 @@
-.CartList .CartItem {
+/* Общие стили */
+.CartList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.CartItem {
   margin: 30px;
   box-shadow: 0 0 7px 1px white;
   border-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 30px 70px ;
   border-bottom: 1px solid #ccc;
 }
-.CartList .CartItem:hover{
+
+.CartItem:hover {
+  /* Добавьте стили при наведении */
 }
 
-.CartList .CartItem img {
+.CartItem img {
   border: 2px solid white;
   border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
 }
-.CartList .CartItem a {
+
+.CartItem a {
   text-decoration: none;
   color: white;
+  margin-bottom: 0.5rem;
 }
 
-.CartList .CartItem input{
+.CartItem input {
   height: 40px;
-  width: 40px;
+  width: 80px;
   border-radius: 10px;
   border: none;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.CartList .CartItem button {
+.CartItem button {
   background-color: rgb(47, 45, 45);
   color: white;
   border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
 }
 
-.CartList .CartItem button:hover{
+.CartItem button:hover {
   color: dimgray;
   transition: 0.3s;
 }
+
+
 
