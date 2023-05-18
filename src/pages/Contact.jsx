@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="Contact">
-      <div className="text">
+      <div className="contact-text">
         <h1>Contact us</h1>
         <p>If you have any questions, please feel free to give us a call:</p>
         <a href="tel:+996 707 763 896">+996 707 763 896</a>

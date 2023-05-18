@@ -97,11 +97,13 @@
   }
   
   .About{
+    display: flex;
     background-color: white;
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover; 
     box-shadow: 0 0 10px 5px black;
+    color: black;
   }
   .Deliver{
     background-color: white;
