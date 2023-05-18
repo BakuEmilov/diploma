@@ -4,7 +4,7 @@ import React from 'react';
 export default function Contact() {
   return (
     <div className="Contact">
-      <div className='contact-text'>
+      <div className='text'>
         <h1></h1>
       </div>
        <div className="map">

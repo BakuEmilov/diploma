@@ -1,5 +1,6 @@
 .CategoryList ul {
   display: flex;
+  padding: 0;
 }
 
 .CategoryList li {
