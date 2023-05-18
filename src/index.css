@@ -48,12 +48,28 @@
     border-radius: 10px;
   }
   .Home{
+    color: black;
+    display: flex;
     background-color: white;
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover; 
     box-shadow: 0 0 10px 5px black;
   }
+  .Home .video {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .Home iframe {
+    width: 550px;
+    height: 350px;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 10px;
+  }
+  
   .About{
     background-color: white;
     height: 70vh;
