@@ -87,6 +87,8 @@ footer .social-media i:hover{
   }
 
   footer .social-media {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 10px;
   }
 
@@ -130,5 +132,8 @@ footer .social-media i:hover{
 
   footer .social-media i {
     font-size: 14px;
+  }
+  footer{
+    text-align: center;
   }
 }
