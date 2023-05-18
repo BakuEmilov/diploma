@@ -20,6 +20,11 @@ export default function Contact() {
             Twitter
           </a>
         </li>
+        <li>
+          <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+        </li>
         </ul>
       </div>
        <div className="map">
