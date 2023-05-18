@@ -3,6 +3,9 @@ export default function Home() {
     <div className="Home">
       <div className="home-text">
         <h1>Welcome to Nike</h1>
+        <p>
+        Less talk, more action. Let's start buying branded Nike clothing at very good prices.
+        </p>
       </div>
       <div className="video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/PZIqV7wNyyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
