@@ -13,11 +13,7 @@
   flex-direction: column;
   align-items: center;
   padding: 30px 70px ;
-  border-bottom: 1px solid #ccc;
-}
 
-.CartItem:hover {
-  /* Добавьте стили при наведении */
 }
 
 .CartItem img {
