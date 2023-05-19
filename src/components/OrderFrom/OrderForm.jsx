@@ -51,7 +51,7 @@ export default function OrderForm() {
           width="30"
           height="30"
           fill="currentColor"
-          class="bi bi-cart-check-fill"
+          className="bi bi-cart-check-fill"
           viewBox="0 0 16 16"
           
         >
