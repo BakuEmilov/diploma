@@ -34,7 +34,7 @@
     box-shadow: 0 0 10px 5px black;
   }
 
-  .Contact .map {
+  /* .Contact .map {
     padding: 40px;
     width: 100%;
     display: flex;
@@ -47,7 +47,7 @@
     box-shadow: 0 0 5px 1px black;
     border-radius: 10px;
   }
-  
+   */
   .Home{
     color: black;
     display: flex;
@@ -57,7 +57,7 @@
     background-size: cover; 
     box-shadow: 0 0 10px 5px black;
   }
-  .Home .video {
+  /* .Home .video {
     padding: 40px;
     width: 100%;
     display: flex;
@@ -69,7 +69,7 @@
     height: 400px;
     box-shadow: 0 0 5px 1px black;
     border-radius: 10px;
-  }
+  } */
   .Home h3 {
     font-size: 50px;
     padding: 10px;
