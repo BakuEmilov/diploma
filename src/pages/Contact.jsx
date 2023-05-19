@@ -68,7 +68,7 @@ export default function Contact() {
         <p>Click on the map to learn more about the address.</p>
       </div>
       <div className="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.3126435524214!2d78.38154017496124!3d42.484905527206806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865b8a83721585%3A0xd959b9e1932ea40f!2zMSBFc2VuaW5hLCDQmtCw0YDQsNC60L7Quw!5e0!3m2!1sru!2skg!4v1684411818790!5m2!1sru!2skg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.3126435524214!2d78.38154017496124!3d42.484905527206806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865b8a83721585%3A0xd959b9e1932ea40f!2zMSBFc2VuaW5hLCDQmtCw0YDQsNC60L7Quw!5e0!3m2!1sru!2skg!4v1684411818790!5m2!1sru!2skg" width="600" height="450" allowFullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );
