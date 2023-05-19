@@ -9,7 +9,7 @@ export default function Home() {
         </p>
         <button className="home-btn">let's GO</button>
       </div>
-      {/* <div className="video">
+      <div className="video">
         <iframe
           width="100%"
           height="315"
@@ -19,7 +19,7 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen=""
         ></iframe>
-      </div> */}
+      </div>
     </div>
   );
 }
