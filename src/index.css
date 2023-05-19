@@ -113,4 +113,22 @@
     background-size: cover; 
     box-shadow: 0 0 10px 5px black;
   }
- 
+  .Product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Product__image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .Product__price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }

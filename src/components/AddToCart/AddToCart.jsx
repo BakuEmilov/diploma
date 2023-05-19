@@ -15,8 +15,9 @@ export default function AddToCart({ product }) {
 
   return (
     <div className="AddToCart">
-      {cart[product.id]}
+     
       <button onClick={onAddToCartClick}>
+      {cart[product.id]}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
