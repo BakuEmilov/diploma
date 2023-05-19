@@ -7,7 +7,6 @@ export default function Home() {
           Less talk, more action. Let's start buying branded Nike clothing at
           very good prices.
         </p>
-        <button className="home-btn">let's GO</button>
       </div>
       <div className="video">
         <iframe
