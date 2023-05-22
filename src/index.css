@@ -36,3 +36,79 @@
     font-weight: bold;
     margin-top: 10px;
   }
+
+  .delivery-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .delivery-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-text {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .delivery-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .delivery-option {
+    flex: 1;
+    color: #333;
+  }
+  
+  .delivery-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-option-heading {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .delivery-option-text {
+    color: #666;
+    line-height: 1.3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .delivery-container {
+      padding: 10px;
+    }
+  
+    .delivery-info {
+      flex-direction: column;
+    }
+  
+    .delivery-option {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .delivery-heading {
+      font-size: 20px;
+    }
+  
+    .delivery-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .delivery-option-heading {
+      font-size: 16px;
+    }
+  }
