@@ -11,14 +11,14 @@ const Contact = () => {
       <div className="contact-details">
         <div className="contact-item">
           
-          <span className="contact-text">Phone: +1 (123) 456-7890</span>
+          <span className="contact-text">Phone: +996 707 763 896</span>
         </div>
         <div className="contact-item">
-          <span className="contact-text">Email: info@nikeshop.com</span>
+          <span className="contact-text">Email: emilovbaku530@gmail.com</span>
         </div>
         <div className="contact-item">
       
-          <span className="contact-text">Address: 123 Nike Street, City, Country</span>
+          <span className="contact-text">Address: 1 Esenina, Bishkek, Kyrgyzstan</span>
         </div>
       </div>
       <h3 className="contact-subheading">Store Hours</h3>
