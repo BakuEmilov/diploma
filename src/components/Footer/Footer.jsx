@@ -47,8 +47,8 @@ const Footer = () => {
           <div className="col-md-3">
             <h3>Contact Us</h3>
             <p>
-              123 Main St
-              <br /> Anytown, USA 12345
+              1 Esenina
+              <br /> Karakol, Kyrgyzstan
             </p>
             <p>
               Phone: +996 707 763 896

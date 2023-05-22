@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
         <div className="contact-item">
       
-          <span className="contact-text">Address: 1 Esenina, Bishkek, Kyrgyzstan</span>
+          <span className="contact-text">Address: 1 Esenina, Karakol, Kyrgyzstan</span>
         </div>
       </div>
       <h3 className="contact-subheading">Store Hours</h3>
