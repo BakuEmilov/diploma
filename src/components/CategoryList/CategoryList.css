@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 768px) {
   .CategoryList ul {
-    flex-direction: column;
+   
   }
   
   .CategoryList li {

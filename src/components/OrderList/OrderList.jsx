@@ -9,9 +9,9 @@ export default function OrderList() {
     return "No orders found.";
   }
 
-  const output = orders.map(order => {
-    const cartOutput = Object.keys(order.cart).map(productId => {
-      const product = products.find(product => product.id === productId);
+  const output = orders.map((order) => {
+    const cartOutput = Object.keys(order.cart).map((productId) => {
+      const product = products.find((product) => product.id === productId);
 
       if (!product) {
         return "Product not found.";
@@ -19,10 +19,11 @@ export default function OrderList() {
 
       return (
         <div>
-          {product.name}: {order.cart[productId]} X {product.price} som = {order.cart[productId] * product.price} som
+          {product.name}: {order.cart[productId]} X {product.price} som ={" "}
+          {order.cart[productId] * product.price} som
         </div>
       );
-    })
+    });
 
     return (
       <div className="Order">
@@ -32,11 +33,7 @@ export default function OrderList() {
         <div>Cart: {cartOutput}</div>
       </div>
     );
-  })
+  });
 
-  return (
-    <div className="OrderList">
-      {output}
-    </div>
-  );
+  return <div className="OrderList">{output}</div>;
 }
