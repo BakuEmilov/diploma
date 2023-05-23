@@ -174,3 +174,27 @@
       margin-bottom: 20px;
     }
   }
+  .about-us-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-description,
+  .about-us-mission,
+  .about-us-values,
+  .about-us-visit {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-visit {
+    font-weight: bold;
+  }
