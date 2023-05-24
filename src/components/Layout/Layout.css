@@ -10,7 +10,10 @@
   margin: 0 auto;
 } 
 .Layout header {
+  padding: 0 10px;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   grid-area: header;
 }
