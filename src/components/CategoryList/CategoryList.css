@@ -26,18 +26,37 @@
   background-color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .CategoryList ul {
-   
-  }
-  
+@media (max-width: 1200px) {
   .CategoryList li {
-    flex-basis: 100%;
-    font-size: 16px;
-    padding: 1rem 0;
+    font-size: 17px;
+    padding: 2rem 1rem;
   }
-  
+
   .CategoryList li a {
-    padding: 1rem; 
+    padding: 1rem 4rem; 
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 980px) {
+  .CategoryList li {
+    font-size: 14px;
+    padding: 2rem 1rem;
+  }
+
+  .CategoryList li a {
+    padding: 1rem 3rem; 
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CategoryList li {
+    padding: 10px;
+  }
+
+  .CategoryList li a {
+    padding: 10px 13px;
+    font-size: 14px;
   }
 }
