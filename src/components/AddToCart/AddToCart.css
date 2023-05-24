@@ -1,4 +1,6 @@
 .AddToCart button {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-weight: 500;
   border: 1px solid white;
