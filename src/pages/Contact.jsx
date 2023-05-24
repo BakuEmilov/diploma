@@ -11,25 +11,31 @@ const Contact = () => {
       <div className="contact-details">
         <div className="contact-item">
           {/*  */}
-          <span className="contact-text">Phone:    <a
-            className="Tel"
-            target="_blank"
-            rel="noreferrer"
-            href="tel:  +996 707 763 896"
-          >
-            +996 707 763 896
-          </a></span>
+          <span className="contact-text">
+            Phone:{" "}
+            <a
+              className="Tel"
+              target="_blank"
+              rel="noreferrer"
+              href="tel:  +996 707 763 896"
+            >
+              +996 707 763 896
+            </a>
+          </span>
         </div>
         <div className="contact-item">
           {/*  */}
-          <span className="contact-text">Email: <a
-            className="Tel"
-            target="_blank"
-            rel="noreferrer"
-            href="mailto:emilovbaku530@gmail.com"
-          >
-            emilovbaku530@gmail.com
-          </a></span>
+          <span className="contact-text">
+            Email:{" "}
+            <a
+              className="Tel"
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:emilovbaku530@gmail.com"
+            >
+              emilovbaku530@gmail.com
+            </a>
+          </span>
         </div>
         <div className="contact-item">
           {/*  */}
