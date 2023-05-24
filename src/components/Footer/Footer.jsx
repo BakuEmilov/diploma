@@ -29,16 +29,16 @@ const Footer = () => {
             <h3>Our Services</h3>
             <ul>
               <li>
-                <Link to="/services/web-design">Tracksuits</Link>
+                <Link to={"/categories/tracksuits"}>Tracksuits</Link>
               </li>
               <li>
-                <Link to="/services/web-development">Different Hats</Link>
+                <Link to={"/categories/hats"}>Different Hats</Link>
               </li>
               <li>
-                <Link to="/services/mobile-app-development">Backpack</Link>
+                <Link to={"/categories/backpack"}>Backpack</Link>
               </li>
               <li>
-                <Link to="/services/seo">Sneakers</Link>
+                <Link to={"/categories/sneakers"}>Sneakers</Link>
               </li>
             </ul>
           </div>
@@ -49,8 +49,22 @@ const Footer = () => {
               <br /> Karakol, Kyrgyzstan
             </p>
             <p>
-              Phone: +996 707 763 896
-              <br /> Email: emilovbaku530@gmail.com
+            <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="tel:  +996 707 763 896"
+          >
+            +996 707 763 896
+          </a>
+              <br /> Email:    <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:emilovbaku530@gmail.com"
+          >
+            emilovbaku530@gmail.com
+          </a>
             </p>
           </div>
           <div className="col-md-3">

@@ -32,11 +32,11 @@ footer ul li {
   margin-bottom: 10px;
 }
 
-footer ul li a {
+footer a {
   color: rgb(47, 45, 45);
   text-decoration: none;
 }
-footer ul li a:hover {
+footer a:hover {
   color: dimgray;
   transition: 0.3s;
 }
