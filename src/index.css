@@ -144,7 +144,8 @@
   }
   
 
-  .contact-icon {
+  .contact-item svg {
+    color: black;
     font-size: 18px;
     margin-right: 10px;
   }
