@@ -163,6 +163,14 @@
     color: #666;
     text-align: center;
   }
+
+  .contact-item a {
+    color: #333;
+    text-decoration: none;
+  }
+  .contact-item a:hover{
+    color: dimgray;
+  }
   
   /* Responsive Styles */
   @media screen and (max-width: 768px) {
