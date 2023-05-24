@@ -1,4 +1,10 @@
 export default function ThankYou() {
+  setTimeout(function () {
+    window.location.href = "https://baiyr-emilov-nike.netlify.app/";
+  }, 5000)
+  window.onload = function() {
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="ThankYou">
       <h1>Thank you!</h1>
