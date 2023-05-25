@@ -207,3 +207,48 @@
   .about-us-visit {
     font-weight: bold;
   }
+
+  .Home .Home-container {
+    padding: 20px;
+    color: #333;
+    background-color: white;
+  }
+
+  .Home .btn-home {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  
+  .Home .btn-home .link-home {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .Home .home-text {
+    text-align: center;
+  }
+
+  .home-text h3  {
+     font-size: 40px;
+  }
+
+  .home-text p {
+    font-size: 25px;
+  }
+
+  .Home .video iframe {
+    border-radius: 10px;
+    height: 400px;
+  } 
+
+  @media screen and (max-width: 768px) {
+    .Home .video iframe {
+      height: 100;
+    }
+  }
+  

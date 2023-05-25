@@ -6,7 +6,9 @@ export default function ThankYou() {
     window.scrollTo(0, 0);
   }
   return (
-    <div className="ThankYou">
+    <div className="ThankYou" style={{
+      textAlign: "center",
+    }}>
       <h1>Thank you!</h1>
       <p>
         Your order has been received. Our specialists will contact with you
