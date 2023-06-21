@@ -18,6 +18,7 @@ import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 
+
 // Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
   categories: [],
